@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Nind's Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            Nind's Gallery
+        </div>
+
+        <nav class="nav-menu" id="navMenu">
+            <a href="index.html">Beranda</a>
+            <a href="portfolio.html" class="active">
+                Portofolio
+            </a>
+            <a href="about.html">Tentang</a>
+            <a href="contact.html">Kontak</a>
+            <a href="login/login.html" class="login-btn">
+                Login
+            </a>
+        </nav>
+
+        <div class="hamburger" id="hamburger">
+            ☰
+        </div>
+    </header>
+
+    <!-- Header -->
+    <section class="page-header">
+        <h1>My Portfolio</h1>
+        <p>
+            Koleksi karya desain grafis modern,
+            aesthetic, dan kreatif.
+        </p>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-section">
+
+        <div class="portfolio-grid">
+
+            <!-- Poster 1 -->
+            <div class="portfolio-card">
+                <img src="https://picsum.photos/500/700?1"
+                    alt="Poster 1"
+                    onclick="openModal(this.src)">
+            </div>
+
+            <!-- Poster 2 -->
+            <div class="portfolio-card">
+                <img src="https://picsum.photos/500/700?2"
+                    alt="Poster 2"
+                    onclick="openModal(this.src)">
+            </div>
+
+            <!-- Poster 3 -->
+            <div class="portfolio-card">
+                <img src="https://picsum.photos/500/700?3"
+                    alt="Poster 3"
+                    onclick="openModal(this.src)">
+            </div>
+
+            <!-- Poster 4 -->
+            <div class="portfolio-card">
+                <img src="https://picsum.photos/500/700?4"
+                    alt="Poster 4"
+                    onclick="openModal(this.src)">
+            </div>
+
+            <!-- Poster 5 -->
+            <div class="portfolio-card">
+                <img src="https://picsum.photos/500/700?5"
+                    alt="Poster 5"
+                    onclick="openModal(this.src)">
+            </div>
+
+            <!-- Poster 6 -->
+            <div class="portfolio-card">
+                <img src="https://picsum.photos/500/700?6"
+                    alt="Poster 6"
+                    onclick="openModal(this.src)">
+            </div>
+
+            <!-- Poster 7 -->
+            <div class="portfolio-card">
+                <img src="https://picsum.photos/500/700?7"
+                    alt="Poster 7"
+                    onclick="openModal(this.src)">
+            </div>
+
+            <!-- Poster 8 -->
+            <div class="portfolio-card">
+                <img src="https://picsum.photos/500/700?8"
+                    alt="Poster 8"
+                    onclick="openModal(this.src)">
+            </div>
+
+            <!-- Poster 9 -->
+            <div class="portfolio-card">
+                <img src="https://picsum.photos/500/700?9"
+                    alt="Poster 9"
+                    onclick="openModal(this.src)">
+            </div>
+
+            <!-- Poster 10 -->
+            <div class="portfolio-card">
+                <img src="https://picsum.photos/500/700?10"
+                    alt="Poster 10"
+                    onclick="openModal(this.src)">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Modal Preview -->
+    <div class="modal" id="imageModal">
+        <span class="close-modal"
+            onclick="closeModal()">
+            ✕
+        </span>
+
+        <img id="modalImg">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            © 2026 Nind's Gallery | All Rights Reserved
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
