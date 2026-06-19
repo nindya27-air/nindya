@@ -1,0 +1,139 @@
+:root {
+  --bg: #3D441E;
+  --panel-dark: #6D712E;
+  --panel: #737B4C;
+  --accent: #A2A529;
+  --text: #B0AA7E;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: var(--panel-dark);
+  position: sticky;
+  top: 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+nav a {
+  color: var(--text);
+  margin: 0 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 90px 20px;
+  background: linear-gradient(
+    135deg,
+    var(--panel-dark),
+    var(--panel)
+  );
+}
+
+.hero h2 {
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+/* SECTION */
+section {
+  padding: 40px 20px;
+}
+
+/* GRID PORTFOLIO */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background: var(--panel-dark);
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+  border: 1px solid rgba(162,165,41,0.2);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* BUTTON */
+button {
+  background: var(--accent);
+  color: #1f1f1f;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #c0bd5a;
+  transform: scale(1.05);
+}
+
+/* LINKS */
+a {
+  color: var(--text);
+}
+
+/* MAP & VIDEO */
+iframe {
+  border-radius: 10px;
+  border: 2px solid var(--panel-dark);
+}
+
+/* MODAL LOGIN */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: var(--panel-dark);
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* INPUT */
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: var(--panel);
+  color: var(--text);
+}
+
+input:focus {
+  outline: 2px solid var(--accent);
+}
